@@ -21,7 +21,9 @@ Infrastructure is fully defined with **Terraform**. The demo exposes a `POST /or
 
 ## 🚀 Deploy
 
-> Requirements: AWS account + credentials (`aws configure sso` or `aws configure`), Terraform ≥ 1.5.
+Requirements:
+- AWS account + credentials (`aws configure sso` or `aws configure`)
+- Terraform ≥ 1.5
 
 ```bash
 cd infra
@@ -59,7 +61,8 @@ API Gateway (HTTP)	~$1.00
 Lambda (req+dur)	~$0.20–0.30
 CloudWatch Logs	~$0.10–0.30
 
-With light testing this is typically well under $5/month. (At scale, add DynamoDB/SQS costs.)
+With light testing this is typically well under $5/month.
+(At scale, add DynamoDB/SQS costs.)
 
 📈 Next Steps
 Add DynamoDB (on-demand) to persist orders
@@ -69,15 +72,3 @@ Add SQS + DLQ for async processing
 Wire GitHub Actions with OIDC for plan/apply
 
 Add CloudWatch alarms & a small dashboard
-
-This repository demonstrates AWS serverless fundamentals: Terraform IaC, a minimal HTTP API, and predictable low cost.
-
-makefile
-
-::contentReference[oaicite:0]{index=0}
-
-
-
-
-
-
