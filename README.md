@@ -30,11 +30,11 @@ terraform apply -auto-approve
 Terraform outputs:
 
 ini
-Копировать код
+
 api_base_url = "https://<api-id>.execute-api.<region>.amazonaws.com"
 🧪 Test
 bash
-Копировать код
+
 API="$(terraform output -raw api_base_url)"
 
 # Create an order (echo payload)
@@ -50,7 +50,7 @@ curl -s -X POST "$API/order" \
 # }
 🧹 Clean up
 bash
-Копировать код
+
 cd infra
 terraform destroy -auto-approve
 💰 Cost (typical demo scale)
@@ -73,7 +73,7 @@ Add CloudWatch alarms & a small dashboard
 This repository demonstrates AWS serverless fundamentals: Terraform IaC, a minimal HTTP API, and predictable low cost.
 
 makefile
-Копировать код
+
 ::contentReference[oaicite:0]{index=0}
 
 
