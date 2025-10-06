@@ -1,3 +1,5 @@
+[![CI](https://github.com/ZhannaKutuzova/serverless-order-api/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ZhannaKutuzova/serverless-order-api/actions/workflows/ci.yml)
+
 # Serverless Order API — AWS Lambda + Terraform
 
 [![CI](https://github.com/ZhannaKutuzova/serverless-order-api/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhannaKutuzova/serverless-order-api/actions)
